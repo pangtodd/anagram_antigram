@@ -2,7 +2,7 @@ require('pry')
 
 class Anagrams
   def anagram_check(word1, word2)
-    if word1.upcase.split("").sort.join == word2.upcase.split("").sort.join
+    if word1.gsub(/[^a-zA-Z]+/,"").downcase.split("").sort.join == word2.gsub(/[^a-zA-Z]+/,"").downcase.split("").sort.join
       "These words are anagrams!"
     else
       "These words are not anagrams."

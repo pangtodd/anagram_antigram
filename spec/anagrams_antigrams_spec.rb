@@ -3,9 +3,9 @@ require('anagrams_antigrams')
 
 describe(Anagrams)do
   describe('#anagram_check') do
-    it("takes two arguments and sees if the words are anagrams")do
+    it("takes two arguments and sees if the words or phrases are anagrams, regardless of punctuation or spacing")do
       test = Anagrams.new
-      expect(test.anagram_check("apt","pat")).to eq("These words are anagrams!")
+      expect(test.anagram_check("Fourty! Five?","OVER        FIFTY!")).to eq("These words are anagrams!")
     end
     it("takes two arguments and sees if the words are anagrams, regardless of capitalization")do  
       test = Anagrams.new  

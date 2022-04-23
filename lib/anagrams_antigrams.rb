@@ -8,7 +8,7 @@ class Anagrams
     @word2_plain = word2
   end
 
-  #checks words have at least one vowel and starts the program- if first condition is met, it daisy-chains into anagram_check, which daisy-chains into antigram_check.
+  #checks words have at least one vowel and starts the program- if first condition is met, it daisy-chains into anagram_check, which then daisy-chains into antigram_check.
   def word_check
     word1_score = @word1.match(/[aeiouy]/) ? 1 : 0
     word2_score = @word2.match(/[aeiouy]/) ? 1 : 0

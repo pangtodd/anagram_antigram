@@ -12,12 +12,6 @@ describe(Anagrams)do
       expect(test.anagram_check).to eq("Apt and Pat are anagrams!")
     end
   end
-  describe ("#compare_score")do
-    it("takes two arguements and returns a score of how many letters are the same")do
-      test = Anagrams.new("bob", "bob")
-      expect(test.compare_score("bob","bob")).to eq(3)
-    end
-  end
   describe("#word_check")do
     it("takes a single argument and makes sure the string has at least one vowel")do
       test = Anagrams.new("hzzz", "hi")
@@ -29,5 +23,8 @@ describe(Anagrams)do
       test = Anagrams.new("box o' ROX!", "FAT cat")
       expect(test.antigram_check).to eq("box o' ROX! and FAT cat are antigrams.")
     end
+    it("takes two arguments and checks to see if thy are antigrams- if they are not, it says how many letters are in common, and which ones.")
+      test = Anagrams.new("box o' ROCKS!", "FAT cats")
+      expect(test.antigram_check).to eq("box o' ROCKS! and FAT cats are not antigrams or anagrams- but 2 letters match: k,s")
   end 
 end

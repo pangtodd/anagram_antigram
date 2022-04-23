@@ -9,13 +9,17 @@ describe(Anagrams)do
     end
     it("takes two arguments and sees if the words are anagrams. If they are not, it checks if they are antigrams.")do  
       test = Anagrams.new("Apt","Part")
-      expect(test.anagram_check).to eq("Apt and Pat are anagrams!")
+      expect(test.anagram_check).to eq("Apt and Part are not anagrams. \nApt and Part are not antigrams or anagrams- but 3 letters match: a,p,t")
     end
   end
   describe("#word_check")do
-    it("takes a single argument and makes sure the string has at least one vowel or y")do
+    it("takes both inputs and makes sure the variables has at least one vowel or y")do
       test = Anagrams.new("hzzz", "hi")
       expect(test.word_check).to eq("check again, hzzz doesn't seem to have any vowels or a y.")
+    end
+    it("takes both inputs and if both inputs meet the basic requirement of having a vowel or y, it check to see if they are an anagram")do
+      test = test = Anagrams.new("apt", "pat")
+      expect(test.word_check).to eq(ok, apt and pat pass the basic requirement of a word having at least one vowel or y. \n apt and pat are anagrams!")
     end
   end
   describe("#antigram_check")do

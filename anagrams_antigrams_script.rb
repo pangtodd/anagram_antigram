@@ -6,6 +6,6 @@ puts "first word?"
 word1 = gets.chomp
 puts "second word?"
 word2 = gets.chomp
-puts "first word is #{word1} and second word is #{word2}, right?"
+puts "first word is #{word1} and second word is #{word2},"
 test= Anagrams.new(word1, word2)
 puts "#{test.word_check}"

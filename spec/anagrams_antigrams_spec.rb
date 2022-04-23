@@ -18,8 +18,8 @@ describe(Anagrams)do
       expect(test.word_check).to eq("check again, hzzz doesn't seem to have any vowels or a y.")
     end
     it("takes both inputs and if both inputs meet the basic requirement of having a vowel or y, it check to see if they are an anagram")do
-      test = test = Anagrams.new("apt", "pat")
-      expect(test.word_check).to eq(ok, apt and pat pass the basic requirement of a word having at least one vowel or y. \n apt and pat are anagrams!")
+      test = Anagrams.new("apt", "pat")
+      expect(test.word_check).to eq("ok, apt and pat pass the basic requirement of a word having at least one vowel or y. \n apt and pat are anagrams!")
     end
   end
   describe("#antigram_check")do

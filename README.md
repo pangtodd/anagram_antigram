@@ -10,10 +10,11 @@ Project which checks user input of two words to check if they are antigrams or a
 * RSPEC
 * Pry
 * markdown
+* Regular expressions
 
 
 ## Description:
-This project focuses on TDD in the Ruby enviornment. Taking user input for two words or sentences, the program should compare the two inputs and determine if they are anagrams or antigrams. It also accounts for differences like punctionuation, capitalization, and use of non-letter characters (numbers, symbols, etc)
+This project focuses on TDD in the Ruby enviornment. Taking user input for two words or sentences, the program should compare the two inputs and determine if they are anagrams or antigrams. It also accounts for differences like punctionuation, capitalization, and use of non-letter characters (numbers, symbols, etc).
 
 ## Setup/Installation Requirements
 
